@@ -79,21 +79,21 @@ if(form){
     </div>`;
   document.body.appendChild(bd);
   bd.style.display='flex';
-  function closeGate(){ bd.style.display='none'; bd.remove(); }  
-  // ✅ Redirect when "Yes" is clicked
+  function closeGate(){ bd.style.display='none'; bd.remove(); }
   bd.querySelector('#age-yes').addEventListener('click', function(){
     window.location.href = "http://t7q4.com/?utm_campaign=RuEoNAxI6g&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
   });
- 
-  // ✅ Just close modal when "No" is clicked
+                                                
   bd.querySelector('#age-no').addEventListener('click', function(){
     window.location.href = "http://t7q4.com/?utm_campaign=RuEoNAxI6g&v1=[v1]&v2=[v2]&v3=[v3]"; // change to your target page
+  });
 })();
 (function(){
   const path = window.location.pathname;
   const isHome = /(^\/$|lander\.html$)/.test(path);
   if (!isHome) return;
 
+ 
   // Theme tokens
   const vars = `
     :root {
@@ -227,7 +227,7 @@ if(form){
       helper.textContent = 'Please wait while we complete a quick check.';
       sub.textContent = 'in progress…';
 
-      // After 5s from start of spinner: finish + redirect
+      // After 3s from start of spinner: finish + redirect
       setTimeout(() => {
         spinner.style.display = 'none';
         box.classList.add('checked');
